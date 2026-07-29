@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
+  <link rel="stylesheet" href="Day 6.css">s
   <meta name="description" content="Full-stack web developer specializing in React and Node.js. Available for freelance projects.">
     <meta name="keywords" content="web developer, React, JavaScript, portfolio">
     <meta name="author" content="Bhavana Ramesh">
@@ -24,9 +25,9 @@
 <body>
 
   <header>
-    <nav>
-      <div class="Logo">Bhavana Ramesh</div>
-      <ul>
+    <nav class="navbar">
+      <div class="Logo"><b>Bhavana Ramesh</b></div>
+      <ul class="nav-link">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -40,9 +41,9 @@
 
   <main>
 
-    <section id="hero" class="hero">
-      <h1>Hi, I'm Bhavana</h1>
-      <p>I build beautiful, fast, accessible websites.</p>
+    <section id="hero" class="hero-section">
+      <h1>Hi, I'm Bhavana 👋</h1>
+      <p class="tagline">I build beautiful, fast, accessible websites.</p>
       <div class="hero-buttons">
         <a href="#projects">View My Work</a>
         <a href="#contact">Contact Me</a>
@@ -72,7 +73,29 @@
       <h2>My Projects</h2>
       <div class="project-grid"> 
         <article class="project-card" data-category="web">
-          <img src="WeatherApps logo.jpg" alt="Weather app screenshot" width="200px" height="200px">
+          <img src="WeatherApps logo.jpg" alt="Weather app screenshot" width="300px" height="300px">
+          <h3>Weather App</h3>
+          <p>Real-time weather informtion dashboard using OpenWeather API</p>
+          <div class="project-tags">
+            <span>React</span>
+            <span>API</span>
+          </div>
+          <a href="#">Live Demo</a>
+          <a href="https://github.com/bhavanaramesh28">Github</a>
+        </article>
+        <article class="project-card" data-category="web">
+          <img src="WeatherApps logo.jpg" alt="Weather app screenshot" width="300px" height="300px">
+          <h3>Weather App</h3>
+          <p>Real-time weather informtion dashboard using OpenWeather API</p>
+          <div class="project-tags">
+            <span>React</span>
+            <span>API</span>
+          </div>
+          <a href="#">Live Demo</a>
+          <a href="https://github.com/bhavanaramesh28">Github</a>
+        </article>
+        <article class="project-card" data-category="web">
+          <img src="WeatherApps logo.jpg" alt="Weather app screenshot" width="300px" height="300px">
           <h3>Weather App</h3>
           <p>Real-time weather informtion dashboard using OpenWeather API</p>
           <div class="project-tags">
@@ -104,7 +127,10 @@
           <textarea id="message" name="message" placeholder="Enter your message" required></textarea><br><br>   
         </div>  
 
-        <button type="submit">Send Message 📩</button><br><br>
+        <button type="submit" class="btn btn-primary">Send Message 📩</button><br><br>
+        <button type="reset" class="btn btn-secondary">Reset  📩</button><br><br>
+
+      </form>
       </form>
     </section>
   </main> 
@@ -115,5 +141,7 @@
       <a href="https://www.linkedin.com/in/bhavana-ramesh-63016b3a3" target="_blank">LinkedIn</a>
     </nav>
   </footer> 
+
+  <script src="script.js"> </script>
 </body>
 </html>

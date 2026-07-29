@@ -1,98 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Bhavana Ramesh</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Full-stack web developer specializing in React and Node.js. Available for freelance projects.">
+    <meta name="keywords" content="web developer, React, JavaScript, portfolio">
+    <meta name="author" content="Bhavana Ramesh">
+
+    <!-- Open Graph (for Facebook, LinkedIn, WhatsApp previews) -->
+    <meta property="og:title" content="Bhavana Ramesh | Web Developer">
+    <meta property="og:description" content="Check out my portfolio and projects!">
+    <meta property="og:image" content="ASSIGNMENT/Photo.jpeg">
+    <meta property="og:url" content="https://bhavanaramesh.com">
+    <meta property="og:type" content="website">
+ 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bhavana Ramesh | Web Developer">
+    <meta name="twitter:description" content="Check out my portfolio!">
+</head>    
 </head>
 <body>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="projects">Projects</a>
-        <a href="contacts">Contact</a>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="Logo"><b>Bhavana Ramesh</b></div>
+      <ul class="nav-link">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
     </nav>
-    <header>
-        <h1>Hi, I'm Bhavana👋 </h1>
-        <p> I'm a passionate web developer from Bangalore</p>
-        <a href="#hire me">Hire me</a>
-    </header>
-    <h2>Learning Journey</h2>
-    <ol>
-        <li>Learn HTML</li>
-        <li>Learn CSS</li>
-        <li>Learn JavaScript</li>
-        <li>Build Web Projects</li>
-        <li>Learn React</li>
-    </ol>
-    <section id="about">
-        <h2>About me</h2>
-       <img src="Photo.jpeg" alt="profile_pic" width="200px" height = "200px">
-        <p>I love buliding things on the web. Currently learning HTML, CSS, JavaScript and react</p>
+  </header>
+
+  <main>
+
+    <section id="hero" class="hero-section">
+      <h1>Hi,I'm <span class="highlight">Bhavana Ramesh 👋</span></h1>
+      <p class="tagline">I build beautiful, fast, accessible websites.</p>
+      <div class="hero-button">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      </div>
     </section>
 
-    <section id="sills">
-    <h2>My Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS3</li>
-        <li>Javascript</li>
-        <li>React</li>
-    </ul>
-</section>
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+      <figure class="profile-photo">
+        <img src="Photo.jpeg" alt="profile_pic" width="200px" height = "200px">
+        <figcaption>Bhavana Ramesh - Web Developer</figcaption>
+      </figure>
+      <p>I'm a passionate web developer from Bangalore.</p>
+    </section>
 
-<section id="projects">
-    <h2>My Projects</h2>
-    <h3>Project 1</h3>
-    <p>Discription of project 1</p>
-    <a href="#view project">projects</a>
-</section>
+    <section id="skills" class="skills-section">
+      <h2>My Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-item" data-level="90">HTML</div>
+        <div class="skill-item" data-level="85">CSS</div>
+        <div class="skill-item" data-level="80">JavaScript</div>
+        <div class="skill-item" data-level="75">React</div>
+      </div>
+    </section>
 
-<section id="projects">
-    <h3>Project 2</h3>
-    <p>Discription of project 2</p>
-    <a href="#view project">projects</a>
-</section>
+    <section id="projects" class="projects-section">
+      <h2>My Projects</h2>
+      <div class="project-grid"> 
+        <article class="project-card" data-category="web">
+          <img src="WeatherApps logo.jpg" alt="Weather app screenshot" width="300px" height="300px">
+          <h3>Weather App</h3>
+          <p>Real-time weather informtion dashboard using OpenWeather API</p>
+          <div class="project-tags">
+            <span>React</span>
+            <span>API</span>
+          </div>
+          <a href="#">Live Demo</a>
+          <a href="https://github.com/bhavanaramesh28">Github</a>
+        </article>
+        <article class="project-card" data-category="web">
+          <img src="WeatherApps logo.jpg" alt="Weather app screenshot" width="300px" height="300px">
+          <h3>Weather App</h3>
+          <p>Real-time weather informtion dashboard using OpenWeather API</p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">API</span>
+          </div>
+          <a href="#">Live Demo</a>
+          <a href="https://github.com/bhavanaramesh28">Github</a>
+        </article>
+        <article class="project-card" data-category="web">
+          <img src="WeatherApps logo.jpg" alt="Weather app screenshot" width="300px" height="300px">
+          <h3>Weather App</h3>
+          <p>Real-time weather informtion dashboard using OpenWeather API</p>
+          <div class="project-tags">
+            <span>React</span>
+            <span>API</span>
+          </div>
+          <a href="#">Live Demo</a>
+          <a href="https://github.com/bhavanaramesh28">Github</a>
+        </article>
+      </div>
+    </section>
 
-<section id="projects">
-    <h3>Project 3</h3>
-    <p>Discription of project 3</p>
-    <a href="#view project">projects</a>
-</section>
+    <section id="contact" class="contact-section" >
+      <h2 >Get In Touch</h2>
 
-<section id="Contact">
-    <!--<h2>Contact</h2>
-<p>Email:<a href="mailto:bhavanaramesh28gmail.com">bhavanaramesh28gmail.com</a>,</p>
-<p>github:<a href="https://github.com/bhavanaramesh28">bhavanaramesh28</a></p>
-<p>linkedin:<a href="https://www.linkedin.com/in/bhavana-ramesh-63016b3a3">bhavana ramesh</a></p> -->
-<h2>Contact Me</h2>
-<p>Have a project in mind? Let's talk</p>
-<form action="">
-<label for="name">Your Name:</label><br><br>
-<input type="text" name="name" id="name" required placeholder="Enter your name"><br><br>
+      <form action="#" method="post" novalidate>
+        <div class="form-group">
+          <label for="name">Your Name:</label><br><br>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        </div>
 
-<label for="email">Email:</label><br><br>
-<input type="text" name="email" id="email" required placeholder="Enter your email"><br><br>
+        <div class="form-group">
+          <label for="email">Your Email:</label><br><br>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        </div>
 
-<label for="subject">Subject</label><br><br>
+        <div class="form-group">
+          <label for="message">Your Message:</label><br><br>
+          <textarea id="message" name="message" placeholder="Enter your message" required></textarea><br><br>   
+        </div>  
 
-<select name="country" id="country">
-  <option value="-- select a value --">-- select a value --</option><br><br>
-  <option value="hire">I want to hire you </option><br><br>
-  <option value="collab">I want to collab you</option><br><br>
-  <option value="others">others</option><br><br>
-</select><br><br>
+        <button type="submit" class="btn btn-primary">Send Message 📩</button><br><br>
+        <button type="reset" class="btn btn-secondary">Reset  📩</button><br><br>
 
-   <label for="message">Message:</label><br><br>
-    <textarea name="message " id="messaage" placeholder="Please drop a message"></textarea><br><br>
-          
-  <button type="submit" value="submit">submit</button>
-  <button type="reset" value="Reset">Reset</button>
-  </select>
-</section>
-</form>
-    <footer><br><br>
-        2026[Bhavana Ramesh]. All rights reserved
-    </footer><br><br>
+      </form>
+      </form>
+    </section>
+  </main> 
+  <footer class="site-footer">
+    <p>
+      &copy;<span class="footer-year"></span> Bhavana Ramesh.built with HTML & CSS ❤️
+    </p>
+      <nav aria-label="socialmedia links">
+      <a href="https://github.com/bhavanaramesh28" target="_blank">Github</a>
+      <a href="https://www.linkedin.com/in/bhavana-ramesh-63016b3a3" target="_blank">LinkedIn</a>
+    </nav>
+  </footer> 
+<script src="script.js"> </script>  
 </body>
 </html>

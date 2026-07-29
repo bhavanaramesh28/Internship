@@ -1,0 +1,30 @@
+.project-grid{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+/*tablet*/
+@media(min-width:768px){
+.project-grid{
+    grid-template-columns: repeat(2,1fr);
+}
+ .herosection{
+    font-size:2,srem;
+
+}
+}
+@media(min-width:1024){
+    .project-grid{
+    grid-template-columns: repeat(3,1fr);
+}
+ .herosection{
+    font-size:3,srem;
+}
+}
+@media(min-width:1404){
+    .project-grid{
+    grid-template-columns: repeat(4,1fr);
+}
+ .herosection{
+    font-size:4,srem;
+}
+}

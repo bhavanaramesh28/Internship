@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .square{
+            width:200px;
+            height:200px;
+            background-color: cornsilk;
+            font-size:2cm;
+            text-align: center;
+            animation-name:glow;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+            /*transition-duration: 2s;*/
+           /* transition-timing-function: ease-in-out;*/
+        }
+        
+
+        @keyframes sideleft{
+         from{transform:translateX(200%);}
+        }
+
+        /*@keyframes sideright{
+            to{transform:translte(200%);}
+        }*/
+
+        @keyframes rotate{
+            50%{transform:rotatez(360deg);}
+            
+        }
+        @keyframes grow{
+            50%{transform:scale(2,2);}
+        }
+        @keyframes shrink{
+            50%{transform:scale(0.5,0.5);}
+        }
+        @keyframes fade{
+            50%{opacity:0;}
+        }
+        @keyframes colorchange{
+            0%{background-color:antiquewhite;}
+            25%{background-color: aqua;}
+            50%{background-color: aquamarine;}
+            75%{background-color: azure;}
+            100%{background-color: bisque;}
+        }
+        
+        @keyframes glow{
+            50%{box-shadow: 0px 0px 50px yellow;}
+            
+        }
+
+       /* .square:hover{
+            background-color:yellowgreen ;
+            width: 500px;
+            transform: rotate(90deg);
+        }*/
+    </style>
+</head>
+<body>
+    <div class="square">Hello</div>
+</body>
+</html>

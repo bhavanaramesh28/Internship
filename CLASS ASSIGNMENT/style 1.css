@@ -1,0 +1,18 @@
+p:hover{
+    text-decoration:underline;
+    color:blueviolet
+}
+a:visited{
+    color: rgb(215, 222, 11);
+    
+}
+a:active{
+    color:red;
+}
+input{
+    background-color: aqua;
+    width: 250px;
+}
+p:nth-child(2){
+    color: red;
+}

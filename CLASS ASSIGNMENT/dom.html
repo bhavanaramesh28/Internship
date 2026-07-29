@@ -24,9 +24,9 @@
 <body>
 
   <header>
-    <nav>
-      <div class="Logo">Bhavana Ramesh</div>
-      <ul>
+    <nav class="navbar">
+      <div class="Logo"><b>Bhavana Ramesh</b></div>
+      <ul class="nav-link">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -40,9 +40,9 @@
 
   <main>
 
-    <section id="hero" class="hero">
-      <h1>Hi,<strong> I'm Bhavana</strong> </h1>
-      <p><em>I build beautiful, fast, accessible websites.</em></p>
+    <section id="hero" class="hero-section">
+      <h1>Hi, I'm Bhavana 👋</h1>
+      <p class="tagline">I build beautiful, fast, accessible websites.</p>
       <div class="hero-buttons">
         <a href="#projects">View My Work</a>
         <a href="#contact">Contact Me</a>
@@ -52,7 +52,7 @@
     <section id="about" class="about-section">
       <h2>About Me</h2>
       <figure class="profile-photo">
-        <img src="Photo.jpeg" alt="profile_pic" width="200px" height = "200px">
+        <img src="WhatsApp Image 2026-07-15 at 20.37.20.jpeg" alt="profile_pic" width="200px" height = "200px">
         <figcaption>Bhavana Ramesh - Web Developer</figcaption>
       </figure>
       <p>I'm a passionate web developer from Bangalore.</p>
@@ -71,10 +71,32 @@
     <section id="projects" class="projects-section">
       <h2>My Projects</h2>
       <div class="project-grid"> 
-        <article class="project-card" data-category="web" data-year="2026">
-          <img src="WeatherApps logo.jpg" alt="Weather app screenshot" width="200px" height="200px">
-          <h3><strong>Weather App</strong></h3>
-          <p><em>Real-time weather information dashboard using OpenWeather API</em></p>
+        <article class="project-card" data-category="web">
+          <img src="WeatherApps logo.jpg" alt="Weather app screenshot" width="300px" height="300px">
+          <h3>Weather App</h3>
+          <p>Real-time weather informtion dashboard using OpenWeather API</p>
+          <div class="project-tags">
+            <span>React</span>
+            <span>API</span>
+          </div>
+          <a href="#">Live Demo</a>
+          <a href="https://github.com/bhavanaramesh28">Github</a>
+        </article>
+        <article class="project-card" data-category="web">
+          <img src="WeatherApps logo.jpg" alt="Weather app screenshot" width="300px" height="300px">
+          <h3>Weather App</h3>
+          <p>Real-time weather informtion dashboard using OpenWeather API</p>
+          <div class="project-tags">
+            <span>React</span>
+            <span>API</span>
+          </div>
+          <a href="#">Live Demo</a>
+          <a href="https://github.com/bhavanaramesh28">Github</a>
+        </article>
+        <article class="project-card" data-category="web">
+          <img src="WeatherApps logo.jpg" alt="Weather app screenshot" width="300px" height="300px">
+          <h3>Weather App</h3>
+          <p>Real-time weather informtion dashboard using OpenWeather API</p>
           <div class="project-tags">
             <span>React</span>
             <span>API</span>
@@ -104,7 +126,10 @@
           <textarea id="message" name="message" placeholder="Enter your message" required></textarea><br><br>   
         </div>  
 
-        <button type="submit">Send Message 📩</button><br><br>
+        <button type="submit" class="btn btn-primary">Send Message 📩</button><br><br>
+        <button type="reset" class="btn btn-secondary">Reset  📩</button><br><br>
+
+      </form>
       </form>
     </section>
   </main> 
@@ -114,20 +139,7 @@
       <a href="https://github.com/bhavanaramesh28" target="_blank">Github</a>
       <a href="https://www.linkedin.com/in/bhavana-ramesh-63016b3a3" target="_blank">LinkedIn</a>
     </nav>
-
   </footer> 
-  <!--image and figcaption-->
-    <a href="https://www.amazon.in"><img src="../ASSIGNMENT/amazonlogo.jpg" alt="Logo" width="200px" height="200px" ></a>
-    <figcaption>This is a logo of Amazon</figcaption>
-
-     <!-- How to insert a video-->
-      <video src="Aari Aari - Dhurandhar The Revenge_HD-(HDvideo9).mp4" width="400px" height="300px" controls autoplay loop></video><br><br>
-
-      <!-- Audio-->
-       <audio src="Khat Navjot Ahuja 128 Kbps.mp3" controls autoplay loop> </audio><br><br>
-
-       <!-- iframe -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/AGBjI0x9VbM?si=09LkNvGtIdJ_sSGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+<script> document.querySelector(".hero-section")</script>
 </body>
 </html>
